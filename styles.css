@@ -7,7 +7,8 @@
 
 body {
     line-height: 1.6;
-    background-color: #E8E5DE; /* Beige background */
+    /*background-color: #E8E5DE; /* Beige background */
+    background-color: #E8E5DE;
     color: #000000; /* Black text */
 }
 
@@ -215,7 +216,7 @@ nav {
 /* About Us Section */
 .about-us {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
     position: relative;
 }
 
@@ -313,7 +314,7 @@ nav {
 /* Featured Posts Section */
 #featured-posts {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
     position: relative;
 }
 
@@ -388,7 +389,7 @@ nav {
 /* Contact Us Section */
 .contact-us {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
     position: relative;
 }
 
@@ -535,7 +536,7 @@ footer {
 .media-hero {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .media-hero h1 {
@@ -553,7 +554,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .media-card {
@@ -632,7 +633,7 @@ footer {
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .content-sidebar {
@@ -703,7 +704,7 @@ footer {
 .interview-hero {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .interview-hero h1 {
@@ -718,7 +719,7 @@ footer {
 
 .interview-timeline {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .interview-card {
@@ -804,7 +805,7 @@ footer {
 
 .interview-features {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .feature-grid {
@@ -896,7 +897,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .post-header {
@@ -1040,7 +1041,7 @@ footer {
 
 .related-posts {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;
+    background-color: #E8E5DE;*/
 }
 
 .related-posts h2 {
@@ -1048,6 +1049,28 @@ footer {
     margin-bottom: 3rem;
     font-size: 2.5rem;
 }
+
+.audio-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 5px 10px; /* Smaller padding */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 14px; /* Smaller font size */
+    display: inline-block; /* Keep it inline with text */
+    margin: 0; /* Remove margin */
+  }
+
+  .audio-button:hover {
+    background-color: #45a049; /* Darker green when hovering */
+  }
+
+  .audio-container {
+    display: inline-block;
+  }
+
+
 
 @media (max-width: 768px) {
     .blog-post {
