@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     line-height: 1.6;
     /*background-color: #E8E5DE; /* Beige background */
@@ -114,7 +119,7 @@ nav {
     text-align: center;
     padding-top: 240px;
     padding-bottom: 240px;
-    background-image: url('lebanon.jpg');
+    background-image: url('lebanon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,7 +221,7 @@ nav {
 /* About Us Section */
 .about-us {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
     position: relative;
 }
 
@@ -283,22 +288,18 @@ nav {
 }
 
 .about-content ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+
 }
 
 .about-content li {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    list-style: none;  
 }
 
-.about-content li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #666;
-}
+
 
 @media (max-width: 768px) {
     .about-container {
@@ -314,7 +315,7 @@ nav {
 /* Featured Posts Section */
 #featured-posts {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
     position: relative;
 }
 
@@ -389,7 +390,7 @@ nav {
 /* Contact Us Section */
 .contact-us {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
     position: relative;
 }
 
@@ -536,7 +537,7 @@ footer {
 .media-hero {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .media-hero h1 {
@@ -633,7 +634,7 @@ footer {
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .content-sidebar {
@@ -704,7 +705,7 @@ footer {
 .interview-hero {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .interview-hero h1 {
@@ -719,7 +720,7 @@ footer {
 
 .interview-timeline {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .interview-card {
@@ -805,7 +806,7 @@ footer {
 
 .interview-features {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .feature-grid {
@@ -897,7 +898,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .post-header {
@@ -986,12 +987,6 @@ footer {
     position: relative;
 }
 
-.post-content li::before {
-    content: "•";
-    position: absolute;
-    left: -1rem;
-    color: #666;
-}
 
 .post-footer {
     margin-top: 3rem;
@@ -1041,7 +1036,7 @@ footer {
 
 .related-posts {
     padding: 4rem 2rem;
-    background-color: #E8E5DE;*/
+    background-color: #E8E5DE;
 }
 
 .related-posts h2 {
@@ -1095,3 +1090,75 @@ footer {
         flex-direction: column;
     }
 }
+
+.recipe-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-left: 2em;
+    position: relative;
+}
+
+.recipe-list li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+    text-indent: -2em; /* Fix the position of text */
+}
+
+.recipe-list li::before {
+    content: '';
+    position: absolute;
+    top: 0.5em; /* Adjust this to center the dot */
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    background-color: #556b2f; /* Dot color */
+    border-radius: 50%;
+    border: 2px solid white; /* White border around the dot */
+    box-shadow: 0 0 0 2px #556b2f; /* Dot border */
+}
+
+.recipe-list li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: -16px; /* Position it slightly to the right of the dot */
+    top: 100%; /* Place it below the current li */
+    width: 2px;
+    height: 1.5em; /* Adjust this for line length */
+    border-left: 2px dotted #000000; /* Dotted line */
+}
+
+.post-content h2, .post-content h3 {
+    margin-top: 2em;
+    color: #556b2f; /* a warm, earthy color that suits food */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+}
+
+
+.ingredients-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-left: 2em;
+}
+
+.ingredients-list li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding-left: 2.5em; /* Space for the checkbox */
+    font-size: 1.1em;
+}
+
+.ingredients-list li::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000; /* Border color for the checkbox */
+    border-radius: 4px; /* Rounded corners for the checkbox */
+    background-color: white; /* Checkbox background */
+    box-sizing: border-box;
+}
+
